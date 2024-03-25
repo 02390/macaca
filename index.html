@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,11 +9,16 @@
       font-family: Arial, sans-serif;
       background-color: black;
       color: white;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .container {
       text-align: center;
-      margin-top: 100px;
     }
 
     button {
@@ -34,8 +39,8 @@
     const naoBtn = document.getElementById('nao-btn');
 
     naoBtn.addEventListener('mouseover', () => {
-      const randomX = Math.floor(Math.random() * (window.innerWidth - 100));
-      const randomY = Math.floor(Math.random() * (window.innerHeight - 50));
+      const randomX = Math.random() * (window.innerWidth - naoBtn.clientWidth);
+      const randomY = Math.random() * (window.innerHeight - naoBtn.clientHeight);
       naoBtn.style.position = 'absolute';
       naoBtn.style.left = `${randomX}px`;
       naoBtn.style.top = `${randomY}px`;
