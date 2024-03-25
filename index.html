@@ -3,36 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Gideão Gay ou Não?</title>
+  <title>Pedro Gideão - Gay ou Boato?</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: black;
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
     }
 
     .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
+    }
+
+    h1 {
+      color: #333333;
     }
 
     button {
       padding: 10px 20px;
       font-size: 16px;
       margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Pedro Gideão é gay?</h1>
-    <button id="sim-btn">Sim.</button>
-    <button id="nao-btn">Não.</button>
+    <h1>Pedro Gideão - Gay ou Boato?</h1>
+    <p>Descubra se é verdade ou boato!</p>
+    <button id="sim-btn">Gay</button>
+    <button id="nao-btn">Boato</button>
   </div>
 
   <script>
