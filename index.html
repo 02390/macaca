@@ -1,74 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Gideão - Gay ou Boato?</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    h1 {
-      color: #333333;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      margin: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joatan: Minha Jornada como Gay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Pedro Gideão - Gay ou Boato?</h1>
-    <p>Descubra se é verdade ou boato!</p>
-    <button id="sim-btn">Gay</button>
-    <button id="nao-btn">Boato</button>
-  </div>
-
-  <script>
-    const naoBtn = document.getElementById('nao-btn');
-
-    naoBtn.addEventListener('mouseover', () => {
-      const randomX = Math.random() * (window.innerWidth - naoBtn.clientWidth);
-      const randomY = Math.random() * (window.innerHeight - naoBtn.clientHeight);
-      naoBtn.style.position = 'absolute';
-      naoBtn.style.left = `${randomX}px`;
-      naoBtn.style.top = `${randomY}px`;
-    });
-
-    const simBtn = document.getElementById('sim-btn');
-
-    simBtn.addEventListener('click', () => {
-      window.location.href = 'https://m.youtube.com/watch?si=EzgT6dsCP47ZoBNv&v=0qzKxAKcWxg&feature=youtu.be';
-    });
-  </script>
+    <header>
+        <h1>Bem-vindo ao Meu Mundo</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Quem sou eu</h2>
+            <p>Olá! Meu nome é Joatan e este é meu espaço pessoal. Sou gay e este site é uma plataforma para compartilhar minha jornada, experiências e perspectivas como pessoa LGBTQ+.</p>
+        </section>
+        <section>
+            <h2>Minha História</h2>
+            <p>Nasci em uma pequena cidade onde ser gay era um tabu. Ao longo dos anos, enfrentei desafios e obstáculos, mas também encontrei amor, aceitação e comunidade.</p>
+            <p>Minha jornada como gay moldou quem sou hoje e estou orgulhoso de compartilhar minha autenticidade com o mundo.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Joatan. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
