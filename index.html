@@ -51,9 +51,10 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: absolute;
-            bottom: 0;
             width: 100%;
+        }
+        .section-hidden {
+            display: none;
         }
     </style>
 </head>
@@ -67,17 +68,17 @@
         <a href="#minha-comunidade">Minha Comunidade</a>
     </nav>
     <main>
-        <section id="minha-historia">
+        <section id="minha-historia" class="section-hidden">
             <h2>Minha História</h2>
             <p>Nasci em uma pequena cidade onde ser gay era um tabu. Ao longo dos anos, enfrentei desafios e obstáculos, mas também encontrei amor, aceitação e comunidade.</p>
             <p>Minha jornada como gay moldou quem sou hoje e estou orgulhoso de compartilhar minha autenticidade com o mundo.</p>
         </section>
-        <section id="meus-desafios">
+        <section id="meus-desafios" class="section-hidden">
             <h2>Meus Desafios</h2>
             <p>Como muitas pessoas LGBTQ+, enfrentei diversos desafios ao longo da vida, desde lidar com o preconceito até encontrar minha própria identidade e lugar no mundo.</p>
             <p>Apesar das dificuldades, aprendi a ser forte e a valorizar cada aspecto da minha jornada, pois eles moldaram quem sou hoje.</p>
         </section>
-        <section id="minha-comunidade">
+        <section id="minha-comunidade" class="section-hidden">
             <h2>Minha Comunidade</h2>
             <p>A comunidade LGBTQ+ desempenhou um papel fundamental na minha vida, fornecendo apoio, compreensão e um senso de pertencimento que às vezes faltava em outros lugares.</p>
             <p>Estou imensamente grato por fazer parte de uma comunidade tão diversa e resiliente, e continuo comprometido em apoiar e defender os direitos de todos os membros LGBTQ+.</p>
@@ -86,5 +87,15 @@
     <footer>
         <p>&copy; 2024 Joatan. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.addEventListener('click', () => {
+                sections.forEach(s => s.classList.add('section-hidden'));
+                section.classList.remove('section-hidden');
+            });
+        });
+    </script>
 </body>
 </html>
