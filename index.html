@@ -1,101 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joatan: Minha Jornada como Gay</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-        nav a:hover {
-            background-color: #666;
-        }
-        main {
-            padding: 20px;
-        }
-        h2 {
-            font-size: 24px;
-            color: #333;
-            margin-top: 20px;
-        }
-        p {
-            line-height: 1.6;
-            color: #666;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            width: 100%;
-        }
-        .section-hidden {
-            display: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Gideão - Verdade ou Boato?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333333;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Mundo</h1>
-    </header>
-    <nav>
-        <a href="#minha-historia">Minha História</a>
-        <a href="#meus-desafios">Meus Desafios</a>
-        <a href="#minha-comunidade">Minha Comunidade</a>
-    </nav>
-    <main>
-        <section id="minha-historia" class="section-hidden">
-            <h2>Minha História</h2>
-            <p>Nasci em uma pequena cidade onde ser gay era um tabu. Ao longo dos anos, enfrentei desafios e obstáculos, mas também encontrei amor, aceitação e comunidade.</p>
-            <p>Minha jornada como gay moldou quem sou hoje e estou orgulhoso de compartilhar minha autenticidade com o mundo.</p>
-        </section>
-        <section id="meus-desafios" class="section-hidden">
-            <h2>Meus Desafios</h2>
-            <p>Como muitas pessoas LGBTQ+, enfrentei diversos desafios ao longo da vida, desde lidar com o preconceito até encontrar minha própria identidade e lugar no mundo.</p>
-            <p>Apesar das dificuldades, aprendi a ser forte e a valorizar cada aspecto da minha jornada, pois eles moldaram quem sou hoje.</p>
-        </section>
-        <section id="minha-comunidade" class="section-hidden">
-            <h2>Minha Comunidade</h2>
-            <p>A comunidade LGBTQ+ desempenhou um papel fundamental na minha vida, fornecendo apoio, compreensão e um senso de pertencimento que às vezes faltava em outros lugares.</p>
-            <p>Estou imensamente grato por fazer parte de uma comunidade tão diversa e resiliente, e continuo comprometido em apoiar e defender os direitos de todos os membros LGBTQ+.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Joatan. Todos os direitos reservados.</p>
-    </footer>
+  <div class="container">
+    <h1>Pedro Gideão - Sim ou Não?</h1>
+    <p>Descubra se ele é gay ou não!</p>
+    <button id="sim-btn">Sim</button>
+    <button id="nao-btn">Não</button>
+  </div>
 
-    <script>
-        const sections = document.querySelectorAll('section');
-        sections.forEach(section => {
-            section.addEventListener('click', () => {
-                sections.forEach(s => s.classList.add('section-hidden'));
-                section.classList.remove('section-hidden');
-            });
-        });
-    </script>
+  <script>
+    const naoBtn = document.getElementById('nao-btn');
+
+    naoBtn.addEventListener('mouseover', () => {
+      const randomX = Math.random() * (window.innerWidth - naoBtn.clientWidth);
+      const randomY = Math.random() * (window.innerHeight - naoBtn.clientHeight);
+      naoBtn.style.position = 'absolute';
+      naoBtn.style.left = `${randomX}px`;
+      naoBtn.style.top = `${randomY}px`;
+    });
+
+    const simBtn = document.getElementById('sim-btn');
+
+    simBtn.addEventListener('click', () => {
+      window.location.href = 'https://m.youtube.com/watch?si=EzgT6dsCP47ZoBNv&v=0qzKxAKcWxg&feature=youtu.be';
+    });
+  </script>
 </body>
 </html>
